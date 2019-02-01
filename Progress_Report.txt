@@ -1,27 +1,16 @@
-Goal :- To match derivational related forms in parallel corpora
+Goal :- To translate idiomatic expressions from english to hindi
 
-Solution 1:- Match derivational roots and affixes separately
-
-Ideology for solution 1:-Derivational roots matches are less in number than matches of all corresponding derivations. Reasons are:-
-1. Single word derivation correspondence is not a necessary condition across languages
-2. Training corpus does not have all derivations of each word
+Solutions:-
+1. match the idioms from intermediate structure level than raw sentence level.For eg:- dependency
+2. create an idiom translation module at dep level. Also raw corpus of idiomatic sentences.
 
 
-Steps
-1. Break English words into derivational root and affix
-	i. Find common English affixes from data
-	ii. Break word with best probable affix
-2. Break Hindi words into derivational root and affix
-	i. Find common Hindi affixes from data
-	ii. Break word with best probable affix
-3. Match using NMT
-4. Join affixes with roots in the translation
-5. Compare with plain NMT
+Things that can help:-
+1. Pushpak Bhattacharya's paper on detecting idioms.
+2. Naacl paper on translation and embedding of idiom translation into sentences.
+3. Dipti mam paper of 2208 idioms and its translation.
 
 
-Prerequisites
-1. Run plain NMT and measure the accuracy
-
-Issues:-
-1. Handling multiple affixes
-2. 
+Things to do:-
+1. Implement Pushpak sir's algorithm.
+2. Create a dep training data of 10000 sentences for english.
