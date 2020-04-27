@@ -1,16 +1,19 @@
 Goal :- To translate idiomatic expressions from english to hindi
 
-Solutions:-
-1. match the idioms from intermediate structure level than raw sentence level.For eg:- dependency
-2. create an idiom translation module at dep level. Also raw corpus of idiomatic sentences.
+Identified Solution:-
+1. Detect idioms lexically (syntactically)
+2. Label to Identify idiomaticity(binary for now)
+3. Replace if idiomatic with simpler phrase
 
 
-Things that can help:-
-1. Pushpak Bhattacharya's paper on detecting idioms.
-2. Naacl paper on translation and embedding of idiom translation into sentences.
-3. Dipti mam paper of 2208 idioms and its translation.
+Current Status:-
+1. Detection Module implemented
+2. Dataset with 711 labelled potentially idiomatic expressions in 25000 sentences ready
 
 
 Things to do:-
-1. Implement Pushpak sir's algorithm.
-2. Create a dep training data of 10000 sentences for english.
+1. Implement idiomaticity labelling module from two papers
+..*[Neural Metaphor Detection in Context](https://www.aclweb.org/anthology/D18-1060.pdf)
+..*[A Generalized Idiom Usage Recognition Model Based on Semantic Compatibility](https://aaai.org/ojs/index.php/AAAI/article/view/4647/4525)
+
+2. Implement Replacement.
